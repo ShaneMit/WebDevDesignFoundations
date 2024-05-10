@@ -21,6 +21,16 @@
       margin-left: 7em;
     }
   </style>
+  <script>
+    function validateForm() {
+      if (document.forms[0].userAge.value < 18) {
+        alert("Age is less than 18. You are not an adult.");
+        return false;
+      } // end if
+      alert("Age is valid.");
+      return true;
+    } // end function validateForm
+  </script>
 </head>
 
 <body>
